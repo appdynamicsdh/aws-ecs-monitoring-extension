@@ -30,10 +30,6 @@ Captures ECS metrics and specific instance statistics from Amazon CloudWatch and
 | | port | The proxy port (must also specify host) |  |
 | | username | The proxy username (optional)  |  |
 | | password | The proxy password (optional)  |  |
-| **ec2InstanceNameConfig** | ----- | ----- | ----- |
-| | useNameInMetrics | Set to "true" if you wish to display the instance name rather than  instance Id in the metric browser. Note, name must be configured in your EC2 instance. |  |
-| | tagFilterName | **Do not change.** Internal setting to retrieve instance name. |  |
-| | tagKey | **Do not change.** Internal setting to retrieve instance name.  |  |
 | **metricsConfig** | ----- | ----- | ----- |
 | metricTypes | | Fields under this section can be repeated for multiple metric types override |  |
 | | metricName | The metric name | "CPUUtilization" |
@@ -50,7 +46,7 @@ Captures ECS metrics and specific instance statistics from Amazon CloudWatch and
 | | noOfRegionThreadsPerAccount | The no of threads to process multiple regions per account concurrently | 3 |
 | | noOfMetricThreadsPerRegion | The no of threads to process multiple metrics per region concurrently | 3 |
 | | ----- | ----- | ----- |
-| | metricPrefix | The path prefix for viewing metrics in the metric browser. | "Custom Metrics\|Amazon EC2\|" |
+| | metricPrefix | The path prefix for viewing metrics in the metric browser. | "Custom Metrics\|Amazon ECS\|" |
 
 
 **Below is an example config for monitoring multiple accounts and regions:**
