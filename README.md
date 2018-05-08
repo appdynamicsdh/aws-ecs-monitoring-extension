@@ -73,11 +73,6 @@ proxyConfig:
     username:
     password:
 
-ec2InstanceNameConfig:
-    useNameInMetrics: "true"
-    tagFilterName: "tag-key"
-    tagKey: "Name"    
-
 metricsConfig:
     metricTypes:
       - metricName: "CurrItems"
