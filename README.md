@@ -8,7 +8,7 @@ Captures ECS metrics and specific instance statistics from Amazon CloudWatch and
 ## Installation
 
 1. Run 'mvn clean install' from aws-ec2-monitoring-extension
-2. Copy and unzip AWSEC2Monitor-\<version\>.zip from 'target' directory into \<machine_agent_dir\>/monitors/
+2. Copy and unzip AWSEC2Monitor-\<version\>.zip from 'target' directory (or use the version in the root of this repository) into \<machine_agent_dir\>/monitors/
 3. Edit config.yaml file in AWSEC2Monitor/conf and provide the required configuration (see Configuration section)
 4. Restart the Machine Agent.
 
