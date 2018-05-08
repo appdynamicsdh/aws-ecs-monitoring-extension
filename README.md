@@ -94,7 +94,7 @@ concurrencyConfig:
   noOfRegionThreadsPerAccount: 3
   noOfMetricThreadsPerRegion: 3
 
-metricPrefix: "Custom Metrics|Amazon EC2|"
+metricPrefix: "Custom Metrics|Amazon ECS|"
 ~~~
 
 ## Metrics
