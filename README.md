@@ -110,15 +110,3 @@ metricPrefix: "Custom Metrics|Amazon EC2|"
 Typical metric path: **Application Infrastructure Performance|\<Tier\>|Custom Metrics|Amazon ECS|\<Account Name\>|\<Region\>|Instance|\<instance id or name\>** followed by the metrics defined in the link below:
 
 - [EC2 Metrics](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/ec2-metricscollected.html)
-
-## Contributing
-
-Always feel free to fork and contribute any changes directly via [GitHub](https://github.com/Appdynamics/aws-ec2-monitoring-extension).
-
-## Community
-
-Find out more in the [AppSphere](https://www.appdynamics.com/community/exchange/extension/aws-ec2-monitoring-extension) community.
-
-## Support
-
-For any questions or feature request, please contact [AppDynamics Center of Excellence](mailto:help@appdynamics.com).
