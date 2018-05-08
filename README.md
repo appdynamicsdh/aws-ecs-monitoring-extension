@@ -25,9 +25,6 @@ Captures ECS metrics and specific instance statistics from Amazon CloudWatch and
 | | awsSecretKey | AWS Secret Key, keep it empty if using instance profile |  |
 | | displayAccountName | Display name used in metric path | "MyAWSEC2" |
 | | regions | Regions where ec2 is registered | **Allowed values:**<br/>"ap-southeast-1",<br/>"ap-southeast-2",<br/>"ap-northeast-1",<br/>"eu-central-1",<br/>"eu-west-1",<br/>"us-east-1",<br/>"us-west-1",<br/>"us-west-2",<br/>"sa-east-1" |
-| **credentialsDecryptionConfig** | ----- | ----- | ----- |
-| | enableDecryption | If set to "true", then all aws credentials provided (access key and secret key) will be decrypted - see AWS Credentials Encryption section |  |
-| | decryptionKey | The key used when encypting the credentials |  |
 | **proxyConfig** | ----- | ----- | ----- |
 | | host | The proxy host (must also specify port) |  |
 | | port | The proxy port (must also specify host) |  |
@@ -110,7 +107,7 @@ metricPrefix: "Custom Metrics|Amazon EC2|"
 ~~~
 
 ## Metrics
-Typical metric path: **Application Infrastructure Performance|\<Tier\>|Custom Metrics|Amazon EC2|\<Account Name\>|\<Region\>|Instance|\<instance id or name\>** followed by the metrics defined in the link below:
+Typical metric path: **Application Infrastructure Performance|\<Tier\>|Custom Metrics|Amazon ECS|\<Account Name\>|\<Region\>|Instance|\<instance id or name\>** followed by the metrics defined in the link below:
 
 - [EC2 Metrics](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/ec2-metricscollected.html)
 
