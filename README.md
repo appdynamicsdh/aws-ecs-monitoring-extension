@@ -109,23 +109,6 @@ concurrencyConfig:
 metricPrefix: "Custom Metrics|Amazon EC2|"
 ~~~
 
-### AWS Credentials Encryption
-To set an encrypted awsAccessKey and awsSecretKey in config.yaml, follow the steps below:
-
-1. Download the util jar to encrypt the AWS Credentials from [here](https://github.com/Appdynamics/maven-repo/blob/master/releases/com/appdynamics/appd-exts-commons/1.1.2/appd-exts-commons-1.1.2.jar).
-2. Run command:
-
-   	~~~   
-   	java -cp appd-exts-commons-1.1.2.jar com.appdynamics.extensions.crypto.Encryptor EncryptionKey CredentialToEncrypt
-
-   	For example:
-   	java -cp "appd-exts-commons-1.1.2.jar" com.appdynamics.extensions.crypto.Encryptor test myAwsAccessKey
-
-   	java -cp "appd-exts-commons-1.1.2.jar" com.appdynamics.extensions.crypto.Encryptor test myAwsSecretKey
-   	~~~
-
-3. Set the decryptionKey field in config.yaml with the encryption key used, as well as the resulting encrypted awsAccessKey and awsSecretKey in their respective fields.
-
 ## Metrics
 Typical metric path: **Application Infrastructure Performance|\<Tier\>|Custom Metrics|Amazon EC2|\<Account Name\>|\<Region\>|Instance|\<instance id or name\>** followed by the metrics defined in the link below:
 
